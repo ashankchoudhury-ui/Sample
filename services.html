@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — Sample Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo"><span class="logo-mark">✦</span><span class="logo-text">Sample Clinic</span></a>
+  <div class="nav-center">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link" style="color:var(--gold)">Services</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-book">Book Now</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Book Appointment</a>
+</div>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <span class="eyebrow">What We Offer</span>
+    <h1>Our Dental<br/><em>Services</em></h1>
+    <p>Comprehensive care for every need — from routine checkups to full smile makeovers — all under one roof in Guwahati.</p>
+  </div>
+</section>
+
+<section class="svc-page">
+  <div class="container">
+    <div class="svc-page-grid">
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=700&q=80" alt="General Dentistry"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>General Dentistry</h3>
+          <p>The foundation of great oral health. Our preventive and restorative care keeps your teeth strong year-round.</p>
+          <ul>
+            <li>Comprehensive oral examinations</li>
+            <li>Professional cleaning & scaling</li>
+            <li>Composite & amalgam fillings</li>
+            <li>Gum disease treatment</li>
+            <li>Tooth extractions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=700&q=80" alt="Teeth Whitening"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Teeth Whitening</h3>
+          <p>Professional whitening that delivers safe, dramatic results — brighter by up to 8 shades in a single visit.</p>
+          <ul>
+            <li>In-office laser whitening</li>
+            <li>Take-home custom trays</li>
+            <li>Shade analysis & consultation</li>
+            <li>Sensitivity management</li>
+            <li>Long-term maintenance advice</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=700&q=80" alt="Orthodontics"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Orthodontics</h3>
+          <p>Straighten your teeth and correct bite problems with modern solutions tailored to your lifestyle.</p>
+          <ul>
+            <li>Metal & ceramic braces</li>
+            <li>Clear aligners</li>
+            <li>Retainers & post-treatment care</li>
+            <li>Early intervention for children</li>
+            <li>Adult orthodontics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=700&q=80" alt="Root Canal"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Root Canal Therapy</h3>
+          <p>Modern, painless root canal treatments using the latest endodontic techniques to save your natural tooth.</p>
+          <ul>
+            <li>Single-visit RCT available</li>
+            <li>Laser-assisted treatment</li>
+            <li>Digital apex locator</li>
+            <li>Rotary endodontics</li>
+            <li>Post-treatment crown placement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&q=80" alt="Dental Implants"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Dental Implants</h3>
+          <p>The gold standard for tooth replacement — permanent, natural-looking results that last a lifetime.</p>
+          <ul>
+            <li>Single tooth implants</li>
+            <li>Implant-supported bridges</li>
+            <li>Full-arch restoration (All-on-4)</li>
+            <li>Bone grafting when required</li>
+            <li>3D implant planning</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80" alt="Pediatric Dentistry"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle, child-friendly dental care that builds positive associations with oral health from day one.</p>
+          <ul>
+            <li>First dental visit (age 1+)</li>
+            <li>Fluoride treatments & sealants</li>
+            <li>Space maintainers</li>
+            <li>Painless extractions for children</li>
+            <li>Habit-breaking appliances</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=700&q=80" alt="Cosmetic Dentistry"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Cosmetic Dentistry</h3>
+          <p>Transform your smile with precision cosmetic procedures that enhance both aesthetics and confidence.</p>
+          <ul>
+            <li>Porcelain veneers</li>
+            <li>Dental bonding</li>
+            <li>Full smile makeovers</li>
+            <li>Gum contouring</li>
+            <li>Tooth reshaping</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="svc-page-card reveal-up">
+        <div class="svc-page-img">
+          <img src="https://images.unsplash.com/photo-1551601651-bc60f254d532?w=700&q=80" alt="Oral Surgery"/>
+        </div>
+        <div class="svc-page-body">
+          <h3>Oral Surgery</h3>
+          <p>Expert surgical care for complex dental conditions by our experienced oral and maxillofacial surgeon.</p>
+          <ul>
+            <li>Wisdom tooth removal</li>
+            <li>Impacted tooth surgery</li>
+            <li>Cyst & tumour removal</li>
+            <li>Corrective jaw surgery</li>
+            <li>Oral biopsy</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta reveal-up" style="margin-top:70px;text-align:center">
+      <h2 style="font-size:2rem;color:var(--navy);margin-bottom:0.8rem">Not sure which service you need?</h2>
+      <p style="color:var(--muted);margin-bottom:2rem">Book a free consultation — our doctors will guide you to the right treatment.</p>
+      <a href="contact.html" class="btn-dark">Book Free Consultation →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-sec">
+  <div class="cta-img">
+    <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=1600&q=80" alt="Bright smile"/>
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="cta-content reveal-up">
+    <span class="eyebrow light">Ready to Begin?</span>
+    <h2>Book Your<br/><em>Appointment Today</em></h2>
+    <p>Free consultation · Same-day slots · No hidden fees</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-gold">Book Appointment</a>
+      <a href="tel:+919876543210" class="btn-outline-white">📞 Call Now</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-mark">✦</span> Sample Clinic</div>
+        <p>Premium dental care for your whole family.</p>
+        <small>by Ashank Choudhury</small>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">General Dentistry</a><a href="services.html">Whitening</a><a href="services.html">Orthodontics</a><a href="services.html">Implants</a></div>
+      <div class="footer-col"><h4>Find Us</h4><a href="#">📍 MG Road, Guwahati</a><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@sampleclinic.com">✉ info@sampleclinic.com</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Sample Clinic by Ashank Choudhury. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

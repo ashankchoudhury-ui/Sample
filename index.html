@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Clinic — Premium Dental Care, Guwahati</title>
+  <meta name="description" content="Sample Clinic by Ashank Choudhury. World-class dental care in Guwahati, Assam. Book your appointment today."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">✦</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-mark">✦</span>
+    <span class="logo-text">Sample Clinic</span>
+  </a>
+  <div class="nav-center">
+    <a href="#services" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="#team" class="nav-link">Doctors</a>
+    <a href="#testimonials" class="nav-link">Reviews</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+919876543210" class="nav-phone">📞 +91 98765 43210</a>
+    <a href="contact.html" class="nav-book">Book Now</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#services" onclick="toggleNav()">Services</a>
+  <a href="about.html" onclick="toggleNav()">About</a>
+  <a href="#team" onclick="toggleNav()">Doctors</a>
+  <a href="contact.html" onclick="toggleNav()">Book Appointment</a>
+  <a href="tel:+919876543210" class="mobile-call">📞 Call Now</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&q=80" alt="Modern dental clinic" class="hero-img"/>
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-tag reveal-up">Trusted in Guwahati since 2010</div>
+    <h1 class="hero-title reveal-up">
+      Your Smile,<br/>
+      <em>Perfected.</em>
+    </h1>
+    <p class="hero-sub reveal-up">Premium dental care where modern technology meets compassionate treatment. Serving Guwahati families with excellence for 15 years.</p>
+    <div class="hero-actions reveal-up">
+      <a href="contact.html" class="btn-gold">Book Free Consultation</a>
+      <a href="#services" class="btn-outline-white">Explore Services</a>
+    </div>
+  </div>
+  <div class="hero-stats reveal-up">
+    <div class="hero-stat">
+      <span class="stat-num" data-count="500">0</span><span>+</span>
+      <p>Happy Patients</p>
+    </div>
+    <div class="hero-stat-div"></div>
+    <div class="hero-stat">
+      <span class="stat-num" data-count="15">0</span><span>+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="hero-stat-div"></div>
+    <div class="hero-stat">
+      <span class="stat-num" data-count="10">0</span><span>+</span>
+      <p>Specialists</p>
+    </div>
+    <div class="hero-stat-div"></div>
+    <div class="hero-stat">
+      <span>4.9</span><span>★</span>
+      <p>Google Rating</p>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>General Dentistry</span><span class="dot">✦</span>
+    <span>Teeth Whitening</span><span class="dot">✦</span>
+    <span>Orthodontics</span><span class="dot">✦</span>
+    <span>Root Canal</span><span class="dot">✦</span>
+    <span>Dental Implants</span><span class="dot">✦</span>
+    <span>Pediatric Dentistry</span><span class="dot">✦</span>
+    <span>Cosmetic Dentistry</span><span class="dot">✦</span>
+    <span>Oral Surgery</span><span class="dot">✦</span>
+    <span>General Dentistry</span><span class="dot">✦</span>
+    <span>Teeth Whitening</span><span class="dot">✦</span>
+    <span>Orthodontics</span><span class="dot">✦</span>
+    <span>Root Canal</span><span class="dot">✦</span>
+    <span>Dental Implants</span><span class="dot">✦</span>
+    <span>Pediatric Dentistry</span><span class="dot">✦</span>
+    <span>Cosmetic Dentistry</span><span class="dot">✦</span>
+    <span>Oral Surgery</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT SPLIT -->
+<section class="about-split">
+  <div class="about-split-img reveal-left">
+    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80" alt="Dental clinic interior"/>
+    <div class="about-badge">
+      <strong>2010</strong>
+      <span>Est. Guwahati</span>
+    </div>
+  </div>
+  <div class="about-split-text reveal-right">
+    <span class="eyebrow">Who We Are</span>
+    <h2>A Clinic Built on<br/><em>Trust & Excellence</em></h2>
+    <p>Founded by Dr. Ashank Choudhury, Sample Clinic has become Guwahati's most trusted dental destination — a place where cutting-edge technology meets genuine compassion.</p>
+    <p>From a child's first dental visit to complex smile makeovers, we deliver the same unwavering standard of excellence every single time.</p>
+    <div class="about-features">
+      <div class="af"><span>✦</span> Digital X-Ray & Laser Technology</div>
+      <div class="af"><span>✦</span> Painless Injection Technique</div>
+      <div class="af"><span>✦</span> Transparent Pricing Always</div>
+      <div class="af"><span>✦</span> All Insurance & UPI Accepted</div>
+    </div>
+    <a href="about.html" class="btn-dark">Our Full Story →</a>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Comprehensive Care<br/><em>Under One Roof</em></h2>
+    </div>
+    <div class="services-grid">
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=600&q=80" alt="General Dentistry"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">01</span>
+          <h3>General Dentistry</h3>
+          <p>Checkups, cleanings, fillings and preventive care to keep your teeth healthy year-round.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=600&q=80" alt="Teeth Whitening"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">02</span>
+          <h3>Teeth Whitening</h3>
+          <p>Professional whitening that brightens your smile by up to 8 shades in a single visit.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=600&q=80" alt="Orthodontics"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">03</span>
+          <h3>Orthodontics</h3>
+          <p>Braces and clear aligners to straighten teeth and give you a confident, beautiful smile.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80" alt="Root Canal"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">04</span>
+          <h3>Root Canal</h3>
+          <p>Painless root canal using the latest laser techniques to save your natural tooth.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&q=80" alt="Dental Implants"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">05</span>
+          <h3>Dental Implants</h3>
+          <p>Permanent tooth replacement that looks and functions exactly like natural teeth.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+      <div class="svc-card reveal-up">
+        <div class="svc-img">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&q=80" alt="Pediatric Dentistry"/>
+        </div>
+        <div class="svc-body">
+          <span class="svc-num">06</span>
+          <h3>Pediatric Dentistry</h3>
+          <p>Gentle, child-friendly care in a warm environment your kids will actually enjoy.</p>
+          <a href="services.html" class="svc-link">Learn more →</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="services-cta reveal-up">
+      <a href="services.html" class="btn-dark">View All Services →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US — DARK SECTION -->
+<section class="why">
+  <div class="why-img reveal-left">
+    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80" alt="Doctor with patient"/>
+    <div class="why-float-card">
+      <div class="wfc-icon">⭐</div>
+      <div>
+        <strong>4.9 / 5.0</strong>
+        <span>Google Rating</span>
+      </div>
+    </div>
+  </div>
+  <div class="why-text reveal-right">
+    <span class="eyebrow light">Why Choose Us</span>
+    <h2>Dental Care That<br/><em>Puts You First</em></h2>
+    <p>We combine clinical excellence with genuine warmth — because great dental care is about more than just teeth.</p>
+    <div class="why-items">
+      <div class="why-item">
+        <div class="wi-icon">🔬</div>
+        <div>
+          <h4>Modern Technology</h4>
+          <p>Digital X-rays, laser dentistry and 3D implant planning for precision results.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="wi-icon">💉</div>
+        <div>
+          <h4>Pain-Free Treatment</h4>
+          <p>Comfort-first injections and sedation options for anxious patients.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="wi-icon">💳</div>
+        <div>
+          <h4>Transparent Pricing</h4>
+          <p>No hidden charges. Full cost breakdown before any treatment begins.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="wi-icon">📅</div>
+        <div>
+          <h4>Flexible Scheduling</h4>
+          <p>Weekend and evening slots available. Same-day emergency care.</p>
+        </div>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-gold">Book a Visit →</a>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <span class="eyebrow">Our Specialists</span>
+      <h2>Meet the Doctors<br/><em>Behind Your Smile</em></h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal-up">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80" alt="Dr. Ashank Choudhury"/>
+          <div class="team-overlay">
+            <p>MDS Orthodontics · BDS Gold Medalist · Trained at AIIMS Delhi</p>
+          </div>
+        </div>
+        <div class="team-body">
+          <h3>Dr. Ashank Choudhury</h3>
+          <span>Chief Dentist & Founder</span>
+          <div class="team-tags">
+            <em>Orthodontics</em><em>Cosmetic</em>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal-up">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80" alt="Dr. Priya Sharma"/>
+          <div class="team-overlay">
+            <p>MDS Pediatric Dentistry · Child Behavior Expert · 10 years experience</p>
+          </div>
+        </div>
+        <div class="team-body">
+          <h3>Dr. Priya Sharma</h3>
+          <span>Pediatric Specialist</span>
+          <div class="team-tags">
+            <em>Pediatric</em><em>Preventive</em>
+          </div>
+        </div>
+      </div>
+      <div class="team-card reveal-up">
+        <div class="team-img">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80" alt="Dr. Rahul Das"/>
+          <div class="team-overlay">
+            <p>MDS Oral Surgery · Implant Specialist · Fellowship in Advanced Implantology</p>
+          </div>
+        </div>
+        <div class="team-body">
+          <h3>Dr. Rahul Das</h3>
+          <span>Oral & Maxillofacial Surgeon</span>
+          <div class="team-tags">
+            <em>Implants</em><em>Surgery</em>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testi" id="testimonials">
+  <div class="testi-bg">
+    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80" alt="Clinic background"/>
+    <div class="testi-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="section-head reveal-up" style="color:#fff">
+      <span class="eyebrow light">Patient Stories</span>
+      <h2 style="color:#fff">What Our Patients Say</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"Absolutely painless root canal. The team explained every step and made me feel completely at ease. Best dental experience of my life."</p>
+        <div class="testi-author">
+          <div class="testi-av">RB</div>
+          <div>
+            <strong>Rohit Bora</strong>
+            <small>Guwahati, Assam</small>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"My entire family visits Sample Clinic. From my parents to my kids, everyone is treated with so much care. Truly the best in Guwahati."</p>
+        <div class="testi-author">
+          <div class="testi-av">SK</div>
+          <div>
+            <strong>Sneha Kalita</strong>
+            <small>Dispur, Assam</small>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card reveal-up">
+        <div class="testi-stars">★★★★★</div>
+        <p>"My kids used to be terrified of dentists. Now they look forward to visiting here. Dr. Priya is absolutely wonderful with children!"</p>
+        <div class="testi-author">
+          <div class="testi-av">AD</div>
+          <div>
+            <strong>Anita Deka</strong>
+            <small>Maligaon, Assam</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-sec">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-left reveal-left">
+        <span class="eyebrow">Common Questions</span>
+        <h2>Everything You<br/>Need to Know</h2>
+        <p>Can't find your answer? Call us directly.</p>
+        <a href="tel:+919876543210" class="btn-dark" style="margin-top:1.5rem;display:inline-block">📞 Call Us</a>
+      </div>
+      <div class="faq-right reveal-right">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is teeth whitening safe? <span>+</span>
+          </button>
+          <div class="faq-a">Yes — our supervised whitening uses clinically approved products for safe, even results with minimal sensitivity.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            How often should I visit? <span>+</span>
+          </button>
+          <div class="faq-a">Every 6 months for a checkup and professional cleaning. This catches problems early and maintains optimal oral health.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Do you treat children? <span>+</span>
+          </button>
+          <div class="faq-a">Absolutely! Dr. Priya Sharma specialises in pediatric care and makes children feel safe and even excited about dental visits.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            Is root canal painful? <span>+</span>
+          </button>
+          <div class="faq-a">Not at all. With modern anesthesia it is no more uncomfortable than a routine filling. Most patients are completely surprised.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(this)">
+            What payments do you accept? <span>+</span>
+          </button>
+          <div class="faq-a">Cash, all UPI apps (GPay, PhonePe, Paytm), credit & debit cards, and all major insurance plans including Mediclaim.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-img">
+    <img src="https://images.unsplash.com/photo-1606265752439-1f18756aa5fc?w=1600&q=80" alt="Bright smile"/>
+    <div class="cta-overlay"></div>
+  </div>
+  <div class="cta-content reveal-up">
+    <span class="eyebrow light">Ready?</span>
+    <h2>Start Your Smile<br/><em>Journey Today</em></h2>
+    <p>Free consultation · Same-day appointments · No hidden fees</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn-gold">Book Appointment</a>
+      <a href="tel:+919876543210" class="btn-outline-white">📞 Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-mark">✦</span> Sample Clinic</div>
+        <p>Premium dental care for your whole family. Modern technology, experienced doctors, genuine compassion.</p>
+        <small>by Ashank Choudhury</small>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html">General Dentistry</a>
+        <a href="services.html">Teeth Whitening</a>
+        <a href="services.html">Orthodontics</a>
+        <a href="services.html">Dental Implants</a>
+      </div>
+      <div class="footer-col">
+        <h4>Find Us</h4>
+        <a href="#">📍 MG Road, Guwahati, Assam</a>
+        <a href="tel:+919876543210">📞 +91 98765 43210</a>
+        <a href="mailto:info@sampleclinic.com">✉ info@sampleclinic.com</a>
+        <p class="hours">Mon–Sat: 9am–7pm · Sun: 10am–2pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sample Clinic by Ashank Choudhury. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

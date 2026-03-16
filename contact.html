@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment — Sample Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="nav scrolled" id="nav">
+  <a href="index.html" class="nav-logo"><span class="logo-mark">✦</span><span class="logo-text">Sample Clinic</span></a>
+  <div class="nav-center">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link" style="color:var(--gold)">Contact</a>
+  </div>
+  <div class="nav-right"><a href="tel:+919876543210" class="nav-book">📞 Call Now</a></div>
+  <button class="nav-hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+</div>
+
+<section class="page-header">
+  <div class="page-header-inner">
+    <span class="eyebrow">Get in Touch</span>
+    <h1>Book Your<br/><em>Appointment</em></h1>
+    <p>Fill in the form and we'll confirm your slot within 2 hours. Same-day appointments often available for urgent cases.</p>
+  </div>
+</section>
+
+<section class="contact-sec">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal-left">
+        <span class="eyebrow">Reach Out</span>
+        <h2>We'd Love to<br/><em>See You Smile</em></h2>
+        <p>Our team responds within 2 hours during clinic hours. Don't hesitate to reach out via call, email, or the form.</p>
+
+        <div class="cinfo">
+          <span class="cinfo-icon">📍</span>
+          <div>
+            <h4>Our Address</h4>
+            <p>MG Road, Guwahati<br/>Assam 781001, India</p>
+          </div>
+        </div>
+        <div class="cinfo">
+          <span class="cinfo-icon">📞</span>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+          </div>
+        </div>
+        <div class="cinfo">
+          <span class="cinfo-icon">✉️</span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:info@sampleclinic.com">info@sampleclinic.com</a></p>
+          </div>
+        </div>
+        <div class="cinfo">
+          <span class="cinfo-icon">🕐</span>
+          <div>
+            <h4>Clinic Hours</h4>
+            <p>Monday – Saturday: 9:00 AM – 7:00 PM<br/>Sunday: 10:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+
+        <div class="emergency-box">
+          <strong>🚨 Dental Emergency?</strong><br/>
+          For urgent dental pain, call us directly at <a href="tel:+919876543210">+91 98765 43210</a> for same-day priority care.
+        </div>
+
+        <div style="margin-top:2.5rem;border-radius:16px;overflow:hidden;height:220px;position:relative">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80" alt="Clinic" style="width:100%;height:100%;object-fit:cover"/>
+          <div style="position:absolute;inset:0;background:rgba(12,27,51,0.5);display:flex;align-items:center;justify-content:center">
+            <a href="https://maps.google.com" target="_blank" class="btn-gold">Open in Google Maps →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card reveal-right">
+        <h3>Book an Appointment</h3>
+        <p>Tell us a little about yourself and we'll take care of the rest.</p>
+
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" placeholder="Rohit" required/>
+            </div>
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" placeholder="Bora" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" placeholder="+91 98765 43210" required/>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="rohit@email.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Service Required *</label>
+            <select required>
+              <option value="" disabled selected>Select a service</option>
+              <option>General Checkup & Cleaning</option>
+              <option>Teeth Whitening</option>
+              <option>Orthodontics / Braces</option>
+              <option>Root Canal Treatment</option>
+              <option>Dental Implants</option>
+              <option>Pediatric Dentistry</option>
+              <option>Cosmetic Dentistry</option>
+              <option>Oral Surgery</option>
+              <option>Emergency / Dental Pain</option>
+              <option>Not sure — need consultation</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Preferred Date</label>
+              <input type="date"/>
+            </div>
+            <div class="form-group">
+              <label>Preferred Time</label>
+              <select>
+                <option value="" disabled selected>Select time</option>
+                <option>9:00 AM – 10:00 AM</option>
+                <option>10:00 AM – 11:00 AM</option>
+                <option>11:00 AM – 12:00 PM</option>
+                <option>2:00 PM – 3:00 PM</option>
+                <option>3:00 PM – 4:00 PM</option>
+                <option>4:00 PM – 5:00 PM</option>
+                <option>5:00 PM – 6:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Additional Notes</label>
+            <textarea placeholder="Any specific symptoms, concerns, or details we should know..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">Request Appointment →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="logo-mark">✦</span> Sample Clinic</div>
+        <p>Premium dental care for your whole family.</p>
+        <small>by Ashank Choudhury</small>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Services</h4><a href="services.html">General Dentistry</a><a href="services.html">Whitening</a><a href="services.html">Orthodontics</a><a href="services.html">Implants</a></div>
+      <div class="footer-col"><h4>Find Us</h4><a href="#">📍 MG Road, Guwahati</a><a href="tel:+919876543210">📞 +91 98765 43210</a><a href="mailto:info@sampleclinic.com">✉ info@sampleclinic.com</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Sample Clinic by Ashank Choudhury. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
